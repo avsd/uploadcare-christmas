@@ -13,3 +13,25 @@
     float: left;
 }
 
+h1.title {
+    color: #eee;
+    font-size: 50px;
+    text-shadow: 2px 2px black;
+}
+
+
+.private-letter{
+    float:left;
+    width:571px;
+    height:88px;
+    line-height:115px;
+    margin-right:30px;
+    text-align:right;
+    padding-right:30px;
+    color:#383838;
+    margin:auto;
+    text-shadow:1px 1px 1px #fff;
+    font-family:"Chunk Five";
+    font-size:1.91em;
+    font-weight:normal;
+}
