@@ -1,3 +1,13 @@
+a {
+    color: #00cf70;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    color: black;
+}
+
 .santa-image {
     width: 40%;
     float: left;
@@ -11,6 +21,7 @@
     width: 55%;
     margin-left: 10px;
     float: left;
+    text-align: center;
 }
 
 h1.title {
@@ -22,7 +33,7 @@ h1.title {
 
 .private-letter{
     float:left;
-    width:571px;
+    width:371px;
     height:88px;
     line-height:115px;
     margin-right:30px;
@@ -38,4 +49,33 @@ h1.title {
 
 .uploadcare-logo img {
     max-width: 100%;
+}
+
+.go-ahead {
+    color:#383838;
+    text-shadow:1px 1px 1px #fff;
+    font-family:"Chunk Five";
+    font-size:1.91em;
+    font-weight:normal;
+}
+.col2 {
+    margin-top: 0.3em;
+}
+
+.start-for-free {
+    padding: 0.5em 1em;
+    background: #00cf70;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    border-radius: 100px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+}
+
+.widget-center {
+    text-align: center;
 }
