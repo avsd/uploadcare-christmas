@@ -84,3 +84,11 @@ h1.title {
     color: white;
     cursor: pointer;
 }
+
+.share-buttons{
+    list-style: none;
+}
+
+.share-buttons li{
+    display: inline;
+}
