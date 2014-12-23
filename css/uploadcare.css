@@ -35,3 +35,7 @@ h1.title {
     font-size:1.91em;
     font-weight:normal;
 }
+
+.uploadcare-logo img {
+    max-width: 100%;
+}
