@@ -18,7 +18,7 @@ a.btn-buy-now:hover {
 .santa-image {
     width: 40%;
     float: left;
-    min-width: 300px;
+    min-width: 280px;
 }
 
 .santa-image img {
@@ -30,7 +30,7 @@ a.btn-buy-now:hover {
     margin-left: 10px;
     float: left;
     text-align: center;
-    min-width: 300px;
+    min-width: 280px;
 }
 
 h1.title {
