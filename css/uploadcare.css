@@ -8,6 +8,10 @@ a:hover {
     color: black;
 }
 
+a.btn-buy-now:hover {
+    color: white;
+}
+
 .santa-image {
     width: 40%;
     float: left;
