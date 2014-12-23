@@ -74,11 +74,11 @@
                 </p>
                 <p>&nbsp;</p>
             <ul class="share-buttons">
-                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F2015.uploadcare.com&t=" target="_blank" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.URL)); return false;"><img src="images/flat_web_icon_set/color/Facebook.png"></a></li>
-                    <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2F2015.uploadcare.com&text=Dear%20@Uploadcare%20Santa%20...%20%232015&via=Uploadcare" target="_blank" title="Tweet" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20'  + encodeURIComponent(document.URL)); return false;"><img src="images/flat_web_icon_set/color/Twitter.png"></a></li>
-                    <li><a href="https://plus.google.com/share?url=http%3A%2F%2F2015.uploadcare.com" target="_blank" title="Share on Google+" onclick="window.open('https://plus.google.com/share?url=' + encodeURIComponent(document.URL)); return false;"><img src="images/flat_web_icon_set/color/Google+.png"></a></li>
-                    <li><a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2F2015.uploadcare.com&description=Dear%20@Uploadcare%20Santa%20...%20%232015" target="_blank" title="Pin it" onclick="window.open('http://pinterest.com/pin/create/button/?url=' + encodeURIComponent(document.URL) + '&description=' +  encodeURIComponent(document.title)); return false;"><img src="images/flat_web_icon_set/color/Pinterest.png"></a></li>
-                    <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2F2015.uploadcare.com&title=Dear%20@Uploadcare%20Santa%20...%20%232015" target="_blank" title="Submit to Reddit" onclick="window.open('http://www.reddit.com/submit?url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;"><img src="images/flat_web_icon_set/color/Reddit.png"></a></li>
+                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F2015.uploadcare.com&t=" target="_blank"><img src="images/flat_web_icon_set/color/Facebook.png"></a></li>
+                    <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2F2015.uploadcare.com&text=Dear%20@Uploadcare%20Santa%20...%20%232015&via=Uploadcare" target="_blank" title="Tweet"><img src="images/flat_web_icon_set/color/Twitter.png"></a></li>
+                    <li><a href="https://plus.google.com/share?url=http%3A%2F%2F2015.uploadcare.com" target="_blank" title="Share on Google+"><img src="images/flat_web_icon_set/color/Google+.png"></a></li>
+                    <li><a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2F2015.uploadcare.com&description=Dear%20@Uploadcare%20Santa%20...%20%232015" target="_blank" title="Pin it"><img src="images/flat_web_icon_set/color/Pinterest.png"></a></li>
+                    <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2F2015.uploadcare.com&title=Dear%20@Uploadcare%20Santa%20...%20%232015" target="_blank" title="Submit to Reddit"><img src="images/flat_web_icon_set/color/Reddit.png"></a></li>
                     <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2F2015.uploadcare.com&title=Dear%20@Uploadcare%20Santa%20...%20%232015&summary=&source=http%3A%2F%2F2015.uploadcare.com" target="_blank" title="Share on LinkedIn" onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;"><img src="images/flat_web_icon_set/color/LinkedIn.png"></a></li>
                 </ul> 
             </div>
@@ -182,6 +182,19 @@
      js.src = "//connect.facebook.net/en_US/sdk.js";
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<script type="text/javascript">
+
+    $(function() {
+        var click_fn = function() {
+            window.open($(this).attr('href'));
+            return false;
+        }
+        $('.share-buttons').click(click_fn);
+        $('.go-ahead').click(click_fn);
+    });
+
 </script>
 
 
