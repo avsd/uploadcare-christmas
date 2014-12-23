@@ -86,7 +86,7 @@ footer {border-top:1px solid #516605;background:#192000;}
 /* -- Responsive styles -- */
 @media(max-width:1100px){
   .price-buy{width:405px;} 
-  .btn-buy-now{float:default;margin-left:20px;}   
+  .btn-buy-now{float:default;margin-left:10px;}   
 }
 
 @media(max-width:768px){
