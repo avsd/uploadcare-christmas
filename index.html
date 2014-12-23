@@ -188,11 +188,14 @@
 
     $(function() {
         var click_fn = function() {
-            window.open($(this).attr('href'));
+            window.open(
+                $(this).attr('href'),
+                "socialPopupWindow",
+                "location=no,width=600,height=600,scrollbars=yes,top=100,left=700,resizable=no");
             return false;
         }
-        $('.share-buttons').click(click_fn);
-        $('.go-ahead').click(click_fn);
+        $('.share-buttons a').click(click_fn);
+        $('.go-ahead a').click(click_fn);
     });
 
 </script>
