@@ -1,0 +1,15 @@
+.santa-image {
+    width: 40%;
+    float: left;
+}
+
+.santa-image img {
+    width: 100%;
+}
+
+.santa-tweets {
+    width: 55%;
+    margin-left: 10px;
+    float: left;
+}
+

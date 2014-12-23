@@ -2,17 +2,17 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <!-- == Website title == -->
-    <title>XMAS Season webpage template</title>
+    <title>Tweet to an Uploadcare Santa!</title>
     <!-- ==  Meta tags (SEO) == -->
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta name="description" content="universal xmas webpage template to promote your special deals" />
-    <meta name="keywords" content="christmas,promotion,deal,holidays,template,webakery,xmas,christmasy,season" />
-    <meta name="author" content="webakery.asia" />
+    <meta name="description" content="Write a tweet to Uploadcare Santa, and your wishes may become true!" />
+    <meta name="author" content="Uploadcare" />
     <meta name="viewport" content="maximum-scale=1.0,width=device-width,initial-scale=1.0,user-scalable=0"> 
     <meta name="apple-mobile-web-app-capable" content="yes" />
 
     <!-- == CSS STYLES == -->
     <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="css/uploadcare.css" type="text/css"/>
     
     <!-- == JAVA SCRIPTS == -->
     <!--[if IE]>
@@ -20,30 +20,6 @@
     <![endif]-->
     <script type='text/javascript' src='js/jquery-1.6.4.min.js'></script>
     <script type='text/javascript' src='js/jquery.blueberry.js'></script>
-    <script>
-      $(document).ready(function(){ 
-        // Subscribe form submitting 
-        $('#subscribe').submit(function(){
-          
-          $.ajax({
-            url: 'scripts/ajax.php',
-            type: 'POST',
-            data: {email:$('.email').val(),send:'yes'},
-            success: function(data){
-              $('.email').val(data);
-            },
-            error: function(){
-              $('.email').val('We are sorry but there has been some issue');
-            }
-          });
-          
-          return false;
-        });
-        
-        $('.blueberry').blueberry();
-      }); 
-    </script>
-  
   </head>
   
 <body>
@@ -51,23 +27,21 @@
   <header>  <!-- HEADER SECTION BEGIN -->
     <div class="main">
     
-      <h1 class="col3"><img src="images/header-title.png" alt="Super Christmas deals"></h1>
+      <h1 class="col3">Write a tweet to the Uploadcare Santa!</h1>
       <div class="clear"></div>
       
-      <h2 class="col2">XMAS Season brings you great offers this year! Check out our deals on limited products and make your loved ones happy!</h2>
+      <h2 class="col2">Merry Christmas and Happy New Year!!!</h2>
    
       <div class="clear"></div>
       
-        <div class="blueberry col2 col2-center">  <!-- SLIDER BEGIN -->
-          <div class="arrow_left"><img src="images/arrow-left.png" alt="Slide left" /></div>
-          <div class="arrow_right"><img src="images/arrow-right.png" alt="Slide right" /></div>
-          <ul class="slides">
-            <li><img src="products/ipod.png" title="Limited edition of popular pocket-player from Apple. Get yours now!" alt="Product iPod" /><span>229.99</span></li>
-            <li><img src="products/watch.png" title="Special edition of Monaco watch should be under every tree this year! Beautiful design, great functions and sharp time." alt="Product Watch" /><span>1 859.99</span></li>
-            <li><img src="products/shoes.png" title="Every woman's heart will melt while finding those under the tree. We have a deal for you to make your better half happy!" alt="Product Trumpet" /><span>199.99</span></li>
-            <li><img src="products/trumpet.png" title="Support your kids in culture education and give them this great trumpet!" alt="Product Trumpet" /><span>199.99</span></li>
-            <li><img src="products/puppy.png" title="We have foud a lost puppy, we will give it away for a nice family." alt="Product Puppy" /><span>0.99</span></li>
-          </ul>
+        <div class="blueberry col3">  <!-- SLIDER BEGIN -->
+            <div class="santa-image">
+                <img src="images/santa.png">
+            </div>
+            <div class="santa-tweets">
+                <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/search?q=%40uploadcare%20%232015" data-widget-id="547402134061584384">Tweets about @uploadcare #2015</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            </div>
         </div>  <!-- SLIDER END --> 
         <div class="clear"></div>
         
@@ -131,7 +105,7 @@
   </section> <!-- INFO SECTION END -->
   
   <footer> <!-- FOOTER SECTION BEGIN -->
-    <div class="footer">Copyright © 2011, All Rights Reserved by webakery.asia</div>
+      <div class="footer">Copyright © 2014-2015 <a href="https://uploadcare.com">Uploadcare.com</a></div>
   </footer> <!-- FOOTER SECTION END -->
 
 <!-- == Javascript for Twitter feed -->
