@@ -125,6 +125,6 @@ h1.title a:hover {
     font-weight:normal;
 }
 
-.share-buttons li:hover a:after {
+.share-buttons:hover li a:after {
     display: block;
 }
