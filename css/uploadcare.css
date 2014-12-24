@@ -94,8 +94,37 @@ h1.title a:hover {
 
 .share-buttons{
     list-style: none;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 40px;
 }
 
 .share-buttons li{
     display: inline;
+}
+
+.share-buttons li a:after {
+    content: "Share this page!";
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    width: 150px;
+    height: 0px;
+    text-align: left;
+    padding-left: 0px;
+    top: 80px;
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    line-height: 30px;
+    display: none;
+    text-shadow:1px 1px 1px #333;
+    font-family:"Chunk Five";
+    font-size:1.51em;
+    font-weight:normal;
+}
+
+.share-buttons li:hover a:after {
+    display: block;
 }
