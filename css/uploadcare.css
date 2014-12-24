@@ -39,6 +39,13 @@ h1.title {
     text-shadow: 2px 2px black;
 }
 
+h1.title a {
+    color: #fec142;
+}
+
+h1.title a:hover {
+    color: #00cf70;
+}
 
 .private-letter{
     float:left;
