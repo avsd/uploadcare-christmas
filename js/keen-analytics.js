@@ -30,6 +30,13 @@
                     "ua_string" : "user_agent"
                 },
                 "output" : "parsed_user_agent"
+            },
+            {
+                "name" : "keen:url_parser",
+                "input" : {
+                    "url" : "dl"
+                },
+                "output" : "parsed_dl"
             }
         ] 
       };
