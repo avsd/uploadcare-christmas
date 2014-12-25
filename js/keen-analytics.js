@@ -10,9 +10,10 @@
     }
 
     window.post_keen = function(url) {
-      var pth = url.substring(url.indexOf('?') + 1);
-      var json = QueryStringToJSON(pth);
+      var url_pth = url.split('?');
+      var json = QueryStringToJSON(url_pth[1]);
 
+      json.analytics_url = url_pth[0];
       json.ip_address = '${keen.ip}';
       json.user_agent = '${keen.user_agent}';
       json.keen = {
