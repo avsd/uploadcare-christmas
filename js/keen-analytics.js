@@ -405,7 +405,7 @@
     }, T = function(a, b, c) {
         return S(a, b, c, void 0, db);
     }, db = function() {};
-    var gb = qa(window.KeenAnalyticsObject) && sa(window.KeenAnalyticsObject) || "ga", Ba = !1, hb = T("apiVersion", "v"), ib = T("clientVersion", "_v");
+    var gb = qa(window.KeenAnalyticsObject) && sa(window.KeenAnalyticsObject) || "ka", Ba = !1, hb = T("apiVersion", "v"), ib = T("clientVersion", "_v");
     S("anonymizeIp", "aip");
     var jb = S("adSenseId", "a"), Va = S("hitType", "t"), Ia = S("hitCallback"), Ra = S("hitPayload");
     S("nonInteraction", "ni");
@@ -1022,11 +1022,11 @@
         };
     };
     var Z = {
-        ga: function() {
+        ka: function() {
             Z.f = [];
         }
     };
-    Z.ga();
+    Z.ka();
     Z.D = function(a) {
         var b = Z.J.apply(Z, arguments), b = Z.f.concat(b);
         for (Z.f = []; 0 < b.length && !Z.v(b[0]) && !(b.shift(), 0 < Z.f.length); ) ;
@@ -1109,7 +1109,7 @@
         return $.P.slice(0);
     };
     $.N = function() {
-        "ga" != gb && J(49);
+        "ka" != gb && J(49);
         var a = window[gb];
         if (!a || 42 != a.answer) {
             $.L = a && a.l;
