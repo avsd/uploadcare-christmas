@@ -159,21 +159,6 @@
     requestType: "jsonp"                // String (optional: jsonp, xhr, beacon)
   });
 
-  var QueryStringToJSON = function(pth) {
-    var pairs = pth.split('&');
-    var result = {};
-    pairs.forEach(function(pair) {
-        pair = pair.split('=');
-        result[pair[0]] = decodeURIComponent(pair[1] || '');
-    });
-    return JSON.parse(JSON.stringify(result));
-  }
-
-  window.post_keen = function(url) {
-    var pth = url.substring(url.indexOf('?') + 1);
-    var json = QueryStringToJSON(url);
-    keen_client.addEvent('google_analytics', json);
-  }
 </script>
 
 <script>
