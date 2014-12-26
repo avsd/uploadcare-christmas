@@ -164,7 +164,7 @@
             d.onerror = null;
             c();
         };
-        if (typeof post_keen !== "undefined") post_keen(a + "?" + b);
+        if (typeof post_keen !== "undefined") post_keen(a, b);
     }, xd = function(a, b, c) {
         var d;
         d = window.XDomainRequest;
@@ -176,7 +176,7 @@
         };
         d.onload = c;
         d.send(b);
-        if (typeof post_keen !== "undefined") post_keen(a + "?" + b);
+        if (typeof post_keen !== "undefined") post_keen(a, b);
         return !0;
     }, wd = function(a, b, c) {
         var d = window.XMLHttpRequest;
@@ -190,7 +190,7 @@
             4 == e.readyState && (c(), e = null);
         };
         e.send(b);
-        if (typeof post_keen !== "undefined") post_keen(a + "?" + b);
+        if (typeof post_keen !== "undefined") post_keen(a, b);
         return !0;
     }, Fa = function(a, b) {
         if (!document.body) return fb(function() {
