@@ -74,6 +74,23 @@ h1.title a:hover {
     font-size:1.91em;
     font-weight:normal;
 }
+
+.merrychristmas {
+    color:#383838;
+    text-shadow:1px 1px 1px #fff;
+    font-family:"Chunk Five";
+    font-size:2.5em;
+    font-weight:normal;
+}
+
+.merrychristmas  a {
+    color: #AB0000;
+}
+
+.merrychristmas   a:hover {
+    color: #00cf70;
+}
+
 .col2 {
     margin-top: 0.3em;
 }
